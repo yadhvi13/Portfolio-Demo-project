@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="style.css">
+  <title>Yogeeta Portfolio</title>
+</head>
+<body>
+  <header>
+    <div class="logo" aria-label="Portfolio Logo" tabindex="0">MyPortfolio</div>
+    <nav>
+      <ul>
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button id="mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">&#9776;</button>
+  </header>
+
+  <nav id="mobile-nav" aria-label="Mobile menu">
+    <a href="#about" class="active">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about" tabindex="0" aria-label="About Me">
+      <div class="profile-pic" aria-hidden="true">
+        <img src="yogeeta.jpg">
+      </div>
+      <div class="bio">
+        <h1>Hi, I'm <span style="color:#60d9f4;">Yogeeta</span></h1>
+        <p>
+          I'm a passionate frontend developer who loves crafting beautiful,
+          responsive websites and web apps. Skilled in HTML, CSS, and JavaScript. And currently,
+          I am venturing into MERN stack developement. 
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" tabindex="0" aria-label="Projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card" role="article" tabindex="0" aria-label="Project One">
+          <img class="project-image" src="" alt="Project One screenshot" />
+          <div class="project-content">
+            <h3 class="project-title">Project One</h3>
+            <p class="project-desc">A cool React app demonstrating responsive UI.</p>
+            <a class="project-link" href="https://github.com/yadhvi13/frontend-project-1" target="_blank" rel="noopener noreferrer" aria-label="View Project One on GitHub">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card" role="article" tabindex="0" aria-label="Project Two">
+          <img class="project-image" src="https://source.unsplash.com/400x300/?app,design" alt="Project Two screenshot" />
+          <div class="project-content">
+            <h3 class="project-title">Project Two</h3>
+            <p class="project-desc">An elegant app with clean design and smooth interaction.</p>
+            <a class="project-link" href="https://github.com/yadhvi13/Sundown-Wesbite-Clone" target="_blank" rel="noopener noreferrer" aria-label="View Project Two on GitHub">View Project →</a>
+          </div>
+        </div>
+
+        <div class="project-card" role="article" tabindex="0" aria-label="Project Three">
+          <img class="project-image" src="https://source.unsplash.com/400x300/?mobile,interface" alt="Project Three screenshot" />
+          <div class="project-content">
+            <h3 class="project-title">Project Three</h3>
+            <p class="project-desc">Mobile responsive project with neat UX.</p>
+            <a class="project-link" href="https://github.com/yadhvi13/Two-Good-Clone" target="_blank" rel="noopener noreferrer" aria-label="View Project Three on GitHub">View Project →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" tabindex="0" aria-label="Skills">
+      <h2>Skills</h2>
+      <div class="skills-list" aria-live="polite">
+        <span class="skill-item">HTML5</span>
+        <span class="skill-item">CSS3</span>
+        <span class="skill-item">JavaScript</span>
+        <span class="skill-item">Responsive Design</span>
+        <span class="skill-item">Git & GitHub</span>
+        <span class="skill-item">Web Accessibility</span>
+        <span class="skill-item">Flexbox & Grid</span>
+        <span class="skill-item">Cross-browser Testing</span>
+      </div>
+    </section>
+
+    <section id="contact" tabindex="0" aria-label="Contact form">
+      <h2>Contact Me</h2>
+      <form action="#" onsubmit="return false;" aria-label="Contact form">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name" aria-required="true" />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com" aria-required="true" />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required placeholder="Your message" aria-required="true"></textarea>
+
+        <button type="submit" aria-label="Send message">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    &copy; <span id="year"></span> Your Name. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
